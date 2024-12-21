@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/products")
 public class ProductController {
     @GetMapping
-    String index() {
+    String read() {
         return "products";
     }
 
     @GetMapping("/{id}")
-    String show(@PathVariable Long id) {
+    String read(@PathVariable Long id) {
         return "product: " + id;
     }
 
