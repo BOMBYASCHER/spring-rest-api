@@ -1,0 +1,21 @@
+logging:
+  level:
+    root: INFO
+
+spring:
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  output:
+    ansi:
+      enabled: always
+  datasource:
+    url: jdbc:postgresql://localhost:5432/products-database
+    username: test
+    password: test
+
+server:
+  address: 0.0.0.0
+  port: 8090
